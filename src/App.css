@@ -1,0 +1,54 @@
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.artist-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.artist img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.artist-albums-container {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.artist-albums-container h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.albums-name summary {
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.song-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.song-list li {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #888;
+}
