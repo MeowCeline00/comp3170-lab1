@@ -1,6 +1,13 @@
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAlbum = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <div className="app">
       <section id="content">
@@ -24,8 +31,11 @@ function App() {
                 <h2>Jay Chou's albums</h2>
               </div>
 
-              {/* Album 1: Jay */}
-              <details className="albums-name">
+              <details
+                className="albums-name"
+                open={openIndex === 1}
+                onClick={() => toggleAlbum(1)}
+              >
                 <summary>Jay</summary>
                 <ul className="song-list">
                   <li>Adorable Woman</li>
@@ -40,9 +50,12 @@ function App() {
                   <li>Counter-Clockwise Clock</li>
                 </ul>
               </details>
-
-              {/* Album 2: Fantacy */}
-              <details className="albums-name">
+              
+              <details
+                className="albums-name"
+                open={openIndex === 2}
+                onClick={() => toggleAlbum(2)}
+              >
                 <summary>Fantacy</summary>
                 <ul className="song-list">
                   <li>Love Before the Century</li>
