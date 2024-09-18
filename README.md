@@ -3,5 +3,6 @@
 ## Student Infomation
 - D3 Set H Term 3
 - A01309245
+- cwang325@my.bcit.ca
 
 
