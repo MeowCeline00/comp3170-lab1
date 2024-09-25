@@ -3,12 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://meowceline00.github.io/comp3170-lab1/lab-2-assignment/",  
+  "homepage": "https://meowceline00.github.io/comp3170-lab1/lab-2-assignment/",
   "scripts": {
-    "dev": "vite --open --port=3000",
+    "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
