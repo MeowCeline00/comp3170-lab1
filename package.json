@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://meowceline00.github.io/comp3170-lab1/lab-2-assignment/",
+  "homepage": "https://meowceline00.github.io/comp3170-lab1/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
