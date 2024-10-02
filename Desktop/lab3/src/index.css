@@ -1,0 +1,107 @@
+.App {
+  padding: 20px;
+  max-width: 70%;
+  margin: auto;
+}
+
+.App > h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+  gap: 1.5em;
+}
+
+.story {
+  position: relative;
+  padding: 1em;
+  box-shadow: 0 1px 2px #aeaeae;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.story span.delete {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  line-height: 1.2;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: red;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+.story_header {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+  align-items: center;
+}
+
+.story_header h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  color: #4c00c8;
+  font-weight: bold;
+}
+
+.story_header h2 > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.story_creator {
+  display: block;
+  font-size: 2rem; 
+  margin-top: 0.75rem;
+  color: #444;
+}
+
+.story_image {
+  width: 400px;
+  height: 200px;
+  min-width: 400px;
+  min-height: 200px;
+}
+
+.story_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.story_image img.placeholder {
+  background-color: #e0e0e0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #999;
+  border-radius: 4px;
+}
+
+.story_description {
+  margin-top: 10px;
+  font-size: 1.75rem; 
+  color: #1e1e1e;
+  display: -webkit-box; 
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  line-height: 2em; 
+  max-height: 6em; 
+}
